@@ -19,7 +19,7 @@
                     FontSize="36"
                     Content="&#xE700;"
                     Click="HamburgerButton_Click"/>
-            <TextBlock Name="PageTitle" FontSize="24" FontWeight="Bold" RelativePanel.RightOf="HamburgerButton"/>
+            <TextBlock Name="PageTitle" FontSize="24" FontWeight="Bold" RelativePanel.RightOf="HamburgerButton" Margin="20,0,0,0" VerticalAlignment="Center"/>
         </RelativePanel>
         <SplitView Name="MySV" Grid.Row="1" DisplayMode="CompactOverlay"
                    OpenPaneLength="200"
