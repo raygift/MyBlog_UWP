@@ -25,6 +25,29 @@ namespace MyBlog
         public MainPage()
         {
             this.InitializeComponent();
+            MyFrame.Navigate(typeof(BlogWriting));
+            PageTitle.Text = "Write your blog!";
+        }
+
+        private void HamburgerButton_Click(object sender, RoutedEventArgs e)
+        {
+            MySV.IsPaneOpen = !MySV.IsPaneOpen;
+        }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (Home.IsSelected)
+            {
+                MyFrame.Navigate(typeof(BlogWriting));
+                PageTitle.Text = "Write your blog!";
+
+            }
+            else
+            {
+                MyFrame.Navigate(typeof(SettingPage));
+                PageTitle.Text = "Setting your style!";
+
+            }
         }
     }
 }
