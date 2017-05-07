@@ -28,13 +28,13 @@
                 <ListBox SelectionMode="Single" SelectionChanged="ListBox_SelectionChanged">
                     <ListBoxItem Name="Home">
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="40" Text="&#xE80F;"/>
+                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="40" Text="&#xE76D;"/>
                             <TextBlock FontSize="24" Text="Home" Margin="20,0,0,0"/>
                         </StackPanel>
                     </ListBoxItem>
                     <ListBoxItem Name="Setting">
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE1CE;"/>
+                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE115;"/>
                             <TextBlock FontSize="24" Text="Setting" Margin="20,0,0,0"/>
                         </StackPanel>
                     </ListBoxItem>
