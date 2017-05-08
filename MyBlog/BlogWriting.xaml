@@ -8,8 +8,51 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <DatePicker HorizontalAlignment="Left" Margin="144,60,0,0" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="56,60,0,0" TextWrapping="Wrap" Text="日期：" VerticalAlignment="Center" Height="32" Width="83"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="8*"/>
+
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Vertical">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Horizontal" Grid.Row="0">
+                    <TextBox Width="500px"
+                             PlaceholderText="title"></TextBox>
+                    <DatePicker/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Grid.Row="1">
+                    <ListBox>
+                        <ComboBox>
+                            <ComboBoxItem Content="tech" IsSelected="True"></ComboBoxItem>
+                            <ComboBoxItem Content="life"></ComboBoxItem>
+                            <ComboBoxItem Content="tool"></ComboBoxItem>
+                        </ComboBox>
+                    </ListBox>
+                    <TextBox Width="200px" PlaceholderText="tags"></TextBox>
+                    <TextBox Width="200px" PlaceholderText="description"></TextBox>
+                </StackPanel>
+            </Grid>
+
+           
+            
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <StackPanel Orientation="Horizontal">
+                <TextBox
+                    Height="500px"
+                    Width="900px"
+                    PlaceholderText="type blog content"
+                    Margin="20,20,0,0"></TextBox>
+
+            </StackPanel>
+        </StackPanel>
+
+
+        
 
     </Grid>
 </Page>
