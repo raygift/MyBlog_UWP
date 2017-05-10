@@ -34,11 +34,6 @@ namespace MyBlog
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
             var date = publicDate.Date;
-            var t = typeSelectBox.SelectedItem;
-            System.Type temp = typeSelectBox.SelectedItem.GetType();
-            System.Type ctemp = ((ComboBoxItem)typeSelectBox.SelectedItem).GetType();
-
-            var ctype = ((ComboBoxItem)typeSelectBox.SelectedItem).Content.GetType();
             var type = ((ComboBoxItem)typeSelectBox.SelectedItem).Content.ToString();
             var description = blogDescription;
             var tags = blogTags;
